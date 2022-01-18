@@ -1,17 +1,36 @@
-import React from 'react';
+import React, { Component } from 'react';
 import ReactDOM from 'react-dom';
 import './index.css';
-import App from './App';
-import reportWebVitals from './reportWebVitals';
+
+
+
+
+
+class App extends Component{
+    render(){
+        return(
+        <div className="counter">
+            <h1 className="counter__title">Счётчик</h1>
+            <div className="counter__value">0</div>
+            <div className="counter__footer">
+                <div className="counter__additional-btns">
+                    <button className="counter__little-btn" type="button">+25</button>
+                    <button className="counter__little-btn" type="button">+50</button>
+                </div>
+                <div className="counter__main-btns">
+                    <button className="counter__big-btn" type="button"><span class="counter__btn-text">-</span></button>
+                    <button className="counter__big-btn" type="button"><span class="counter__btn-text">+</span></button>
+                </div>
+            </div>
+        </div>
+        )
+    }
+}
+
+
+
 
 ReactDOM.render(
-  <React.StrictMode>
-    <App />
-  </React.StrictMode>,
-  document.getElementById('root')
+    <App />,
+    document.getElementById('root')
 );
-
-// If you want to start measuring performance in your app, pass a function
-// to log results (for example: reportWebVitals(console.log))
-// or send to an analytics endpoint. Learn more: https://bit.ly/CRA-vitals
-reportWebVitals();
