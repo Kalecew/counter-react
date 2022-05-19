@@ -48,18 +48,16 @@ button{
 .counter__footer{
   display: flex;
   flex-direction: column;
-  gap: .7rem;
 }
 .counter__main-btns{
   display: flex;
-  gap: 2px;
   border-radius: .5em;
   overflow: hidden;
 }
 .counter__additional-btns{
   display: flex;
   justify-content: center;
-  gap: .7rem;
+  margin-bottom: .7rem;
 }
 .counter__little-btn{
   background-color: #fff;
@@ -67,6 +65,9 @@ button{
   font-size: 1rem;
   padding: 0.7rem 1.5rem;
   border-radius: .5em;
+}
+.counter__little-btn + .counter__little-btn {
+  margin-left: .7rem;
 }
 .counter__little-btn:active{
   box-shadow: 0 0 4px rgba(0, 0, 0, .25) inset;
@@ -76,6 +77,9 @@ button{
   border: none;
   width: 10rem;
   height: 7rem;
+}
+.counter__big-btn + .counter__big-btn {
+  margin-left: .2rem;
 }
 .counter__big-btn:active{
   box-shadow: 0 0 20px rgba(0, 0, 0, .25) inset;
