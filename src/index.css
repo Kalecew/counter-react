@@ -87,6 +87,7 @@ button{
 .counter__btn-text{
   font-size: 8rem;
   color: #fff;
-  margin-top: -3rem;
+  transform: translateY(-20%);
+  line-height: 1;
   display: block;
 }
